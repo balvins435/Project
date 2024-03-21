@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Send Data to Flask</title>
+</head>
+<body>
+
+  <h2>Enter Data</h2>
+  <form action="http://localhost:5000/" method="POST">
+    <label for="Acre">Acre:</label>
+    <input type="number" id="Acre" name="Acre" required><br><br>
+    
+    <label for="Residue_length">Residue Length:</label>
+    <input type="number" id="Residue_length" name="Residue_length" required><br><br>
+    
+    <label for="Urea">Urea:</label>
+    <input type="number" id="Urea" name="Urea" required><br><br>
+    
+    <label for="Cult_land">Cultivated Land:</label>
+    <input type="number" id="Cult_land" name="Cult_land" required><br><br>
+    
+    <label for="Harv_hand_rent">Harvest Hand Rent:</label>
+    <input type="number" id="Harv_hand_rent" name="Harv_hand_rent" required><br><br>
+    
+    <input type="submit" value="Submit">
+        <h3 id ="score">{{ prediction_text}}</h3>
+  </form>
+
+</body>
+</html>
